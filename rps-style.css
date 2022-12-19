@@ -1,7 +1,7 @@
 body {
     background-color: #333;
 }
-.game-board {
+#game-board {
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(255, 255, 255);
@@ -28,4 +28,20 @@ button {
 #winner {
     font-weight: bold;
     scale: 1.2;
+}
+
+#p-win {
+    display: none;
+}
+#c-win {
+    display: none;
+}
+#tie {
+    display: none;
+}
+
+.restart-game {
+    display: none;
+    font-size: 15px;
+    width: auto
 }

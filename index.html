@@ -8,10 +8,16 @@
   </head>
     
   <body>
-    <div class='game-board'>
+    <div id='game-board'>
       <h1>Rock Paper Scissors</h1>
       
-      <h2 id='game-result'></h2>
+      <div id='game-result'>
+        <h2 id="game-over">Game Over</h2>
+        <h3 id="p-win">Player Wins!</h3>
+        <h3 id="c-win">Computer Wins!</h3>
+        <h3 id="tie">It's a Tie!</h3>
+        <button id="restart-game" class="restart-game">Restart Game</button>
+      </div>
 
       <button id='rock'>Rock</button>
       <button id='paper'>Paper</button>
@@ -19,10 +25,10 @@
       
       <div id='container'>
         <div id='player'>
-            <h2>Player</h2>
+            <h2>Player</h2><p id="player-score"></p>
         </div>
         <div id='computer'>
-            <h2>Computer</h2>
+            <h2>Computer</h2><p id="computer-score"></p>
         </div>
       </div>  
     </div>
