@@ -40,8 +40,13 @@ button {
     display: none;
 }
 
-.restart-game {
+#game-over {
     display: none;
+}
+
+.restart-game {
+    /* display: none; */
     font-size: 15px;
-    width: auto
+    width: auto;
+    margin: auto;
 }

@@ -43,7 +43,10 @@ function getWinner(userChoice, computerChoice) {
 function playRound(userChoice, computerChoice) {
 
     let result = getWinner(userChoice, computerChoice);
-
+if (playerScore === 3 || computerScore === 3) {
+    gameOver.style.display = 'block';
+    restartGame.style.display = 'block';
+} else {
     if (result === "Player") {
         //increment player score by 1
         playerScore++;
@@ -97,6 +100,7 @@ function playRound(userChoice, computerChoice) {
         computer.appendChild(cPick);
         console.log(playerScore, computerScore)   
     }
+}
 }  
 
 buttons.forEach(button => button.addEventListener('click', () => {
